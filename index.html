@@ -29,27 +29,35 @@
 
         <div class="navigation var">
             <div class="container">
-                <div class="row">
-                    <div>
-                        <ul id="nav">
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about">Acerca de nosotros</a>
-                            </li>
-                            <li>
-                                <a href="#service">Servicios</a>
-                            </li>
-                            <li>
-                                <a href="#galery">Galería</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contacto</a>
-                            </li>
-                        </ul>
-                    </div> <!-- colapsable navbar -->
-                </div> <!-- row -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Acerca de nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#galery">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#testimonial">Testimonios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contacto</a>
+                                </li>
+                            </ul>
+                        </div> <!-- colapsable navbar -->
+                    </div> <!-- row -->    
+                </nav> <!-- navbar -->
             </div> <!-- container -->
         </div> <!-- navigation bar -->
 
@@ -59,11 +67,20 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area">
+    <section id="about" class="about-area pt-80 pb-130">
         <div class="container">
             <div class="row">
-                <h1>Acerca de nosotros</h1>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="assets/images/about-1.jpg" alt="Aída coqueeta posando">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-45">
+                    <div class="about-content">
+                        <h1>Acerca de nosotros</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente ut totam quasi ab aspernatur deleniti dolore eius nostrum! Possimus!</p>    
+                    </div>
+                </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -75,8 +92,36 @@
     <section id="service" class="services-area">
         <div class="container">
             <div class="row">
-                <h1>Servicios</h1>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="services-content">
+                    <div class="services-title d-flex justify-content-center"><h1>Nuestros Servicios</h1></div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="service-type d-flex flex-column">
+                                <div class="d-flex justify-content-center"><img class="service-img " src="assets/images/about-1.jpg" alt="servicio nro 1"></div>
+                                <div class="service-title d-flex justify-content-center"><h3>Servicio N 1</h3></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="service-type d-flex flex-column">
+                                <div class="d-flex justify-content-center"><img class="service-img " src="assets/images/about-1.jpg" alt="servicio nro 2"></div>
+                                <div class="service-title d-flex justify-content-center"><h3>Servicio N 2</h3></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="service-type d-flex flex-column">
+                                <div class="d-flex justify-content-center"><img class="service-img " src="assets/images/about-1.jpg" alt="servicio nro 3"></div>
+                                <div class="service-title d-flex justify-content-center"><h3>Servicio N 3</h3></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="service-type d-flex flex-column">
+                                <div class="d-flex justify-content-center"><img class="service-img " src="assets/images/about-1.jpg" alt="servicio nro 4"></div>
+                                <div class="service-title d-flex justify-content-center"><h3>Servicio N 4</h3></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
             </div> <!-- row -->
         </div> <!-- container -->        
     </section>
@@ -95,6 +140,19 @@
     </section>
 
     <!--====== GALERY PART ENDS ======-->
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section id="testimonial" class="testimonial-area">
+        <div class="container">
+            <div class="row">
+                <h1>Testimonios</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div> <!-- row -->
+        </div> <!-- container -->      
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
 
     <!--====== CONTACT PART START ======-->
 
@@ -126,7 +184,14 @@
     <a href="#" class="back-to-top">icon</a>
     <!--====== BACK TO TOP PART ENDS ======-->
 
+    <!--====== PART ENDS ======-->
 
+
+
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
 
 
 
